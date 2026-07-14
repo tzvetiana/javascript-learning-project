@@ -24,7 +24,8 @@ function toCelsius(fahrenheit) {
     return (5 / 9) * (fahrenheit - 32);
 }
 
-// let value = toCelsius(77); // toCelsius() invokes the toCelsius function
+// let value = toCelsius(77); // toCelsius() invokes the toCelsius 
+
 let value = toCelsius;
 
 
