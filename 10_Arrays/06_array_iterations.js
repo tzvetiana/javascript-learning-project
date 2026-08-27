@@ -66,6 +66,24 @@ function reduceFunction(total, value, index, array){
 
 console.log(sum); // 99
 
+
+// Without an initial value, the first array element becomes total. Use 0 when reducing an array of objects into a numeric total.
+
+const testResults = [
+    { name: "Login test", duration: 1200 },
+    { name: "Checkout test", duration: 3500 },
+    { name: "Search test", duration: 800 },
+    { name: "Logout test", duration: 2100 }
+];
+
+const totalDuration = testResults.reduce(calculateDuration, 0); 
+
+function calculateDuration(total, value) {
+    return total + value.duration;
+}
+
+console.log(totalDuration); // 7600
+
 // every() checks if all elements pass a test (true/false)
 
 const nums1 = [45, 4, 9, 16, 25];
