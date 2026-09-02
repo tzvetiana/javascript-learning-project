@@ -4,7 +4,7 @@
 
 // Finally block is executed after try and catch blocks no matter the result
 
-// With Throw statement you can add a custom error
+// With Throw statement you can add a custom error. It can be created with new Error() which contains the error name and message
 
 
 
@@ -12,12 +12,12 @@ const statusCode = 500;
 
 try {
     if (statusCode !== 200) {
-        throw new Error("Expected status 200"); // Error Expected status 200
+        throw new Error("Expected status 200");
     }
 
     console.log("Test passed");
 } catch (err) {
-    console.log(err.name, err.message);
+    console.log(err.name, err.message); // Error Expected status 200
 } finally {
     console.log("Validation finished"); // Validation finished
 }
