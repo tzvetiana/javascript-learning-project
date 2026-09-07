@@ -1,6 +1,6 @@
 // Async code runs later and this makes it hard to find errors
 
-// Debugging asynchronious function fetch(). Check status, path and if the servers returns an error
+// Debugging asynchronous fetch(): check the status, URL, and whether the server returns an error
 
 fetch("https://jsonplaceholder.typicode.com/todos/1")
     .then(response => {
@@ -10,7 +10,7 @@ fetch("https://jsonplaceholder.typicode.com/todos/1")
     .then(data => console.log(".then() data:", data)); // .then() data: { userId: 1, id: 1, title: 'delectus aut autem', completed: false }
 
 
-// async() and await() help for easier code reading
+// async and await make asynchronous code easier to read 
 
 async function loadData() {
     const response = await fetch(
