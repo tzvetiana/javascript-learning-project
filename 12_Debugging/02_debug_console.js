@@ -36,3 +36,4 @@ let users = [
 ];
 
 console.table(users);
+
